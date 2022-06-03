@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="index.css" />
-    <title>Document</title>
+    <title>Shop</title>
   </head>
   <body>
     <nav class="navbar navbar-dark bg-dark">
@@ -46,11 +47,18 @@
             />
           </a>
           <a class="d-none d-md-block" href="#">
-            <img
-              src="images/navbar/cart.svg"
-              alt="cart"
-              class="d-inline-block align-text-top"
-            />
+            <div class="cart position-relative">
+              <div
+                class="cart-counter position-absolute top-0 start-100 translate-middle"
+              >
+                5
+              </div>
+              <img
+                src="images/navbar/cart.svg"
+                alt="cart"
+                class="d-inline-block align-text-top"
+              />
+            </div>
           </a>
         </div>
 
@@ -74,16 +82,9 @@
 
     <div class="first-page">
       <div class="container-xl h-100">
-        <div class="h-100 row align-items-center">
-          <div class="col-6 h-100 d-none d-sm-block position-relative">
-            <img
-              class="h-100 position-absolute"
-              src="images/head/man.png"
-              alt=""
-            />
-          </div>
-
-          <div class="naming d-flex col-sm-6 col-12 justify-content-center">
+        <div class="grid align-items-center">
+          <img class="d-none d-md-block" src="images/head/man.png" alt="" />
+          <div class="naming d-flex justify-content-center">
             <div class="line"></div>
             <div class="header">
               THE BRAND
@@ -93,6 +94,47 @@
         </div>
       </div>
     </div>
+
+    <div class="offer container-xl grid">
+      <div class="offer__card g-col-12 g-col-md-4 position-relative">
+        <div
+          class="offer-title position-absolute top-50 start-50 translate-middle"
+        >
+          30% OFF
+          <p>FOR WOMEN</p>
+        </div>
+        <img src="images/offer/1.png" alt="offerimg1" />
+      </div>
+
+      <div class="offer__card g-col-12 g-col-md-4 position-relative">
+        <div
+          class="offer-title position-absolute top-50 start-50 translate-middle"
+        >
+          HOT DEAL
+          <p>FOR MEN</p>
+        </div>
+        <img src="images/offer/2.png" alt="offerimg2" />
+      </div>
+      <div class="offer__card g-col-12 g-col-md-4 position-relative">
+        <div
+          class="offer-title position-absolute top-50 start-50 translate-middle"
+        >
+          NEW ARRIVALS
+          <p>FOR KIDS</p>
+        </div>
+        <img src="images/offer/3.png" alt="offerimg3" />
+      </div>
+      <div class="offer__card g-col-12 position-relative">
+        <div
+          class="offer-title position-absolute top-50 start-50 translate-middle"
+        >
+          LUXIROUS & TRENDY
+          <p>ACCESORIES</p>
+        </div>
+        <img src="images/offer/4.png" alt="offerimg4" />
+      </div>
+    </div>
+
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
       integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"

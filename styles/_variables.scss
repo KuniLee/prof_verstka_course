@@ -14,10 +14,13 @@ $grey: #6b6b6b;
   --bs-body-color: #222222;
 }
 
+$enable-grid-classes: false;
+$enable-cssgrid: true;
+$paragraph-margin-bottom: 0;
 $navbar-dark-toggler-icon-bg: url(@/images/navbar/burger.svg);
 $navbar-dark-toggler-border-color: rgba($black, 0.1);
 
-$offcanvas-horizontal-width: 100%;
+$offcanvas-horizontal-width: 50%;
 //$btn-close-opacity: 1;
 //$btn-close-width: 1.5em;
 //$grid-gutter-width: 20px;

@@ -11,6 +11,19 @@
 .navbar {
   height: 74px;
 }
+.cart {
+  margin-right: 10px;
+}
+.cart-counter {
+  font-size: 12px;
+  text-align: center;
+  line-height: 19px;
+  color: white;
+  height: 19px;
+  width: 19px;
+  background-color: $pink;
+  border-radius: 50%;
+}
 .navbar-brand {
   padding: 0;
   margin-right: 41px;
