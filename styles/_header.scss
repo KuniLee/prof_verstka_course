@@ -1,0 +1,55 @@
+.line {
+  width: 12px;
+  background-color: $pink;
+  margin-right: 16px;
+}
+.first-page {
+  height: 363px;
+  background-color: $light-pink;
+  .header {
+    font-weight: 900;
+    font-size: 38px;
+    line-height: 46px;
+    p {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      margin-top: 0;
+      span {
+        color: $pink;
+      }
+    }
+  }
+}
+@include media-breakpoint-up(md) {
+  .first-page {
+    .header {
+      font-size: 44px;
+      line-height: 53px;
+      p {
+        font-size: 24px;
+        line-height: 29px;
+      }
+    }
+  }
+}
+@include media-breakpoint-up(lg) {
+  .first-page {
+    img {
+      left: -200px;
+    }
+    height: 764px;
+
+    .naming {
+      margin-bottom: 100px;
+    }
+    .header {
+      font-size: 48px;
+      line-height: 58px;
+      p {
+        font-size: 31px;
+        line-height: 37px;
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.navbar-dark .navbar-toggler-icon {
+  background-image: url(images/navbar/burger.svg);
+}
+.navbar-toggler {
+  padding: 0;
+  border: 0;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar {
+  height: 74px;
+}
+.navbar-brand {
+  padding: 0;
+  margin-right: 41px;
+}
+@include media-breakpoint-up(md) {
+  .offcanvas-end {
+    width: 20%;
+  }
+}

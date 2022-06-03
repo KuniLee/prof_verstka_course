@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+$navbar-height: 42px;
+$black: #222222;
+$pink: #ff6a6a;
+
+$primary: #014524;
+$mint: #cad7d0;
+$green: #014524;
+$light-pink: #f1e4e6;
+$grey: #6b6b6b;
+
+:root {
+  --bs-body-color: #222222;
+}
+
+$navbar-dark-toggler-icon-bg: url(@/images/navbar/burger.svg);
+$navbar-dark-toggler-border-color: rgba($black, 0.1);
+
+$offcanvas-horizontal-width: 100%;
+//$btn-close-opacity: 1;
+//$btn-close-width: 1.5em;
+//$grid-gutter-width: 20px;
+$font-family-base: 'Lato', sans-serif;
+
+$headings-font-weight: 400;
+$headings-line-height: 1.4;
+$headings-color: null;
+
+$accordion-border-radius: 20px;
+
+// @import 'bootstrap/scss/functions';
+// @import 'bootstrap/scss/variables';
+// @import 'bootstrap/scss/mixins';
