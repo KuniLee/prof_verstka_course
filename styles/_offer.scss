@@ -10,7 +10,6 @@
       text-align: center;
       color: white;
       p {
-        color: $pink;
         font-size: 24px;
         font-weight: 700;
         line-height: 29px;
@@ -26,14 +25,12 @@
 
 @include media-breakpoint-up(md) {
   .offer {
-    padding-top: 20px;
     grid-template-rows: auto;
     gap: 20px;
   }
 }
 @include media-breakpoint-up(lg) {
   .offer {
-    padding-top: 64px;
     gap: 30px;
   }
 }

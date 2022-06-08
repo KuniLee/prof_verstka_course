@@ -1,0 +1,97 @@
+.fetured {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  h1 {
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 3px;
+  }
+  p {
+    font-size: 14px;
+    line-height: 17px;
+    color: $grey;
+  }
+  .fetured__cards {
+    --bs-columns: 1;
+    gap: 16px;
+    padding-top: 48px;
+    padding-bottom: 40px;
+    .fetured__card {
+      background: #f8f8f8;
+
+      .img__wrapper {
+        img {
+          width: 100%;
+          object-fit: cover;
+        }
+        .hover_bg {
+          opacity: 0;
+          transition-duration: 500ms;
+          &:hover {
+            opacity: 1;
+            transition-duration: 500ms;
+          }
+          img {
+            &:hover {
+              opacity: 0.9;
+            }
+            &:active {
+              opacity: 0.8;
+            }
+            width: 140px;
+            height: 44px;
+            object-fit: contain;
+          }
+          background: rgba(58, 56, 56, 0.86);
+        }
+      }
+
+      .fetured__card-desc {
+        h3 {
+          font-size: 13px;
+          line-height: 16px;
+          text-transform: uppercase;
+          color: #000000;
+        }
+        .desc-text {
+          color: $gray-dark;
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 17px;
+          margin-bottom: 18px;
+        }
+        .desc-price {
+          font-size: 16px;
+          line-height: 19px;
+        }
+        padding: 25px 16px 20px 16px;
+      }
+    }
+  }
+  .btn {
+    padding: 14px 39px;
+    --bs-btn-border-radius: 0;
+    --bs-btn-hover-color: white;
+    --bs-btn-focus-box-shadow: 0;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .fetured {
+    padding-top: 96px;
+    .fetured__cards {
+      --bs-columns: 2;
+    }
+  }
+}
+@include media-breakpoint-up(lg) {
+  .fetured {
+    .fetured__cards {
+      --bs-columns: 3;
+      padding-bottom: 48px;
+      gap: 30px;
+    }
+  }
+}
