@@ -1,0 +1,73 @@
+.subscribe {
+  background-image: url('images/subscibe/subscribe-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 25% 0;
+  padding-top: 64px;
+  padding-bottom: 109px;
+  > * {
+    gap: 59px;
+    > * {
+      max-width: 360px;
+    }
+  }
+  .face-text {
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 30px;
+  }
+  label {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 37px;
+    margin-bottom: 22px;
+    p {
+      font-size: 14px;
+      line-height: 21.45px;
+      font-weight: 400;
+    }
+  }
+  input {
+    padding: 12px 19px;
+    background-color: #e1e1e1;
+    font-size: 14px;
+    line-height: 17px;
+    border-radius: 20px;
+    &::placeholder {
+      opacity: 0.67;
+    }
+    &:focus {
+      box-shadow: none;
+    }
+  }
+  button {
+    border-radius: 20px;
+    padding: 12px 19px;
+    font-size: 14px;
+    line-height: 17px;
+    color: white;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .subscribe {
+    padding-top: 84px;
+    form {
+      margin-right: 100px;
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .subscribe {
+    padding-bottom: 140px;
+
+    .face-text {
+      font-size: 20px;
+      line-height: 24px;
+    }
+    label {
+      line-height: 39px;
+    }
+  }
+}

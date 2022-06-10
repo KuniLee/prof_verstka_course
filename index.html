@@ -166,7 +166,7 @@
       </div>
     </header>
 
-    <div class="offer container-xl grid">
+    <section class="offer container-xl grid">
       <div class="offer__card g-col-3 g-col-md-1 position-relative">
         <div
           class="offer-title position-absolute top-50 start-50 translate-middle"
@@ -204,10 +204,12 @@
         </div>
         <img src="images/offer/4.png" alt="offerimg4" />
       </div>
-    </div>
-    <div class="fetured container-xl d-flex flex-column align-items-center">
+    </section>
+    <section class="fetured container-xl d-flex flex-column align-items-center">
       <h1>Fetured Items</h1>
-      <p>Shop for items based on what we featured in this week</p>
+      <p class="text-center">
+        Shop for items based on what we featured in this week
+      </p>
       <div class="fetured__cards grid">
         <figure class="fetured__card">
           <div class="img__wrapper w-100 position-relative">
@@ -225,7 +227,8 @@
             <h3>ELLERY X M'O CAPSULE</h3>
             <p class="desc-text">
               Known for her sculptural takes on traditional tailoring,
-              Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
+              Australian arbiter of cool Kym Ellery teams up with Moda
+              Operandi.hfg
             </p>
             <p class="desc-price text-primary">$52.00</p>
           </div>
@@ -339,13 +342,92 @@
       <button type="button" class="btn text-center btn-outline-primary">
         Browse All Product
       </button>
-    </div>
-    <div class="services container-xl grid bg-black">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
-      voluptates quia, sed animi dolore exercitationem, doloribus nesciunt iusto
-      nobis reprehenderit a non sunt, illo perferendis cumque rerum? Dolorum,
-      quaerat ut?
-    </div>
+    </section>
+    <section class="bg-black">
+      <div
+        class="services container-xl grid text-center justify-content-center justify-content-lg-between"
+      >
+        <div class="d-flex flex-column gap-2 gap-lg-3 align-items-center">
+          <img src="images/services/1.svg" alt="service_1" />
+          <h3 class="service-heading">Free Delivery</h3>
+          <p class="service-text">
+            Worldwide delivery on all. Authorit tively morph next-generation
+            innov tion with extensive models.
+          </p>
+        </div>
+
+        <div class="d-flex flex-column gap-2 gap-lg-3 align-items-center">
+          <img src="images/services/2.svg" alt="service_1" />
+          <h3 class="service-heading">Sales & discounts</h3>
+          <p class="service-text">
+            Worldwide delivery on all. Authorit tively morph next-generation
+            innov tion with extensive models.
+          </p>
+        </div>
+        <div class="d-flex flex-column gap-2 gap-lg-3 align-items-center">
+          <img src="images/services/3.svg" alt="service_2" />
+          <h3 class="service-heading">Quality assurance</h3>
+          <p class="service-text">
+            Worldwide delivery on all. Authorit tively morph next-generation
+            innov tion with extensive models.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="subscribe">
+      <div
+        class="container-xl text-center align-items-center align-items-lg-end d-flex flex-column flex-lg-row justify-content-lg-between"
+      >
+        <figure>
+          <img src="images/subscibe/face.png" alt="face" />
+          <figcaption class="face-text text-black">
+            “Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+            <i>a pulvinar purus condimentum“</i>
+          </figcaption>
+        </figure>
+        <form action="" method="post">
+          <label for="email-input">
+            SUBSCRIBE
+            <p>FOR OUR NEWLETTER AND PROMOTION</p>
+          </label>
+          <div class="input-group">
+            <input
+              id="email-input"
+              type="email"
+              class="form-control"
+              placeholder="Enter Your Email"
+              aria-label="email"
+              aria-describedby="button-addon2"
+            />
+            <button class="btn btn-primary" type="button" id="button-addon2">
+              Subscribe
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer class="bg-black">
+      <div
+        class="footer container-xl d-flex flex-column-reverse flex-md-row justify-content-md-between align-items-center"
+      >
+        <p class="text-white">© 2021 Brand All Rights Reserved.</p>
+
+        <div class="d-flex gap-2">
+          <a class="" href="#" target="_blank" rel="noopener"
+            ><img src="images/footer/Facebook.svg" alt="instagram"
+          /></a>
+          <a class="" href="#" target="_blank" rel="noopener"
+            ><img src="images/footer/Instagram.svg" alt="Telegram"
+          /></a>
+          <a class="" href="#" target="_blank" rel="noopener"
+            ><img src="images/footer/Printerest.svg" alt="WhatsApp"
+          /></a>
+          <a class="" href="#" target="_blank" rel="noopener"
+            ><img src="images/footer/Twitter.svg" alt="WhatsApp"
+          /></a>
+        </div>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
       integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"

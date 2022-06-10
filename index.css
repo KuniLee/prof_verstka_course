@@ -10475,6 +10475,10 @@ fieldset:disabled .btn {
   --bs-navbar-color: $black;
 }
 
+.btn {
+  --bs-btn-focus-box-shadow: 0;
+}
+
 .navbar-dark {
   --bs-navbar-color: #222222;
 }
@@ -10781,3 +10785,131 @@ figure {
     gap: 30px;
   }
 }
+
+.services {
+  --bs-columns: 1;
+  grid-template-columns: repeat(var(--bs-columns, 12), minmax(100px, 360px));
+  gap: 47px;
+  padding-top: 48px;
+  padding-bottom: 64px;
+}
+
+.services .service-heading {
+  color: #fbfbfb;
+  font-size: 19.96px;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+
+.services .service-text {
+  color: #fbfbfb;
+  font-weight: 300;
+  font-size: 13.972px;
+  line-height: 17px;
+}
+
+@media (min-width: 992px) {
+  .services {
+    --bs-columns: 3;
+    padding: 104px 0;
+    gap: 30px;
+  }
+}
+
+.subscribe {
+  background-image: url("images/subscibe/subscribe-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 25% 0;
+  padding-top: 64px;
+  padding-bottom: 109px;
+}
+
+.subscribe > * {
+  gap: 59px;
+}
+
+.subscribe > * > * {
+  max-width: 360px;
+}
+
+.subscribe .face-text {
+  font-size: 18px;
+  line-height: 22px;
+  margin-top: 30px;
+}
+
+.subscribe label {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 37px;
+  margin-bottom: 22px;
+}
+
+.subscribe label p {
+  font-size: 14px;
+  line-height: 21.45px;
+  font-weight: 400;
+}
+
+.subscribe input {
+  padding: 12px 19px;
+  background-color: #e1e1e1;
+  font-size: 14px;
+  line-height: 17px;
+  border-radius: 20px;
+}
+
+.subscribe input::placeholder {
+  opacity: 0.67;
+}
+
+.subscribe input:focus {
+  box-shadow: none;
+}
+
+.subscribe button {
+  border-radius: 20px;
+  padding: 12px 19px;
+  font-size: 14px;
+  line-height: 17px;
+  color: white;
+}
+
+@media (min-width: 992px) {
+  .subscribe {
+    padding-top: 84px;
+  }
+  .subscribe form {
+    margin-right: 100px;
+  }
+}
+
+@media (min-width: 768px) {
+  .subscribe {
+    padding-bottom: 140px;
+  }
+  .subscribe .face-text {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .subscribe label {
+    line-height: 39px;
+  }
+}
+
+footer {
+  padding-top: 43px;
+  padding-bottom: 9px;
+}
+
+footer .footer {
+  gap: 40px;
+}
+
+@media (min-width: 768px) {
+  footer {
+    padding: 30px 16px;
+  }
+}
+/*# sourceMappingURL=index.css.map */
