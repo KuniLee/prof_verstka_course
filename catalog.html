@@ -9,7 +9,7 @@
     <title>Shop</title>
   </head>
   <body>
-    <nav class="navbar bg-dark">
+    <nav class="navbar bg-black">
       <div
         class="container-xl d-flex align-items-center justify-content-between"
       >
@@ -168,24 +168,75 @@
       </div>
     </header>
 
-    <div class="filter container-xl grid align-items-center">
-      <div class="filter-button g-col-1">
-        <span class="d-none d-sm-inline">FILTER</span>
-        <img
-          src="images/catalog/filter_sm.svg"
-          alt="filter"
-          srcset="
-            images/catalog/filter.svg    38w,
-            images/catalog/filter_sm.svg 15w
-          "
-          sizes="(max-width: 576px) 38px,
-        15px"
-        />
+    <div class="filter container-xl grid">
+      <div class="filter_dropdown g-col-1">
+        <div
+          class="filter_button position-absolute d-flex align-items-sm-center"
+        >
+          <span class="d-none d-sm-inline">FILTER</span>
+          <span class="filter_image"></span>
+        </div>
+        <ul class="filter-menu">
+          <li class="filter-menu-submenu opened">
+            <label>CATEGORY</label>
+            <ul>
+              <li class="menu-item">Accessories</li>
+              <li class="menu-item">Bags</li>
+              <li class="menu-item">Denim</li>
+              <li class="menu-item">Hoodies & Sweatshirts</li>
+              <li class="menu-item">Jackets & Coats</li>
+              <li class="menu-item">Polos</li>
+              <li class="menu-item">Shirts</li>
+              <li class="menu-item">Shoes</li>
+              <li class="menu-item">Sweaters & Knits</li>
+              <li class="menu-item">T-Shirts</li>
+              <li class="menu-item">Tanks</li>
+            </ul>
+          </li>
+          <li class="filter-menu-submenu">
+            <label>BRAND</label>
+            <ul>
+              <li class="menu-item">Nike</li>
+              <li class="menu-item">Adidas</li>
+              <li class="menu-item">Rebook</li>
+              <li class="menu-item">Hoodies & Sweatshirts</li>
+            </ul>
+          </li>
+          <li class="filter-menu-submenu">
+            <label>DESIGNER</label>
+            <ul>
+              <li class="menu-item">Nicolai</li>
+              <li class="menu-item">Bruce</li>
+              <li class="menu-item">Ganse</li>
+              <li class="menu-item">D&G</li>
+            </ul>
+          </li>
+        </ul>
       </div>
       <div class="filter-settings mt-1 mt-sm-0 g-col-1">
-        <span>TRENDING NOW</span>
-        <span>SIZE</span>
-        <span>PRICE</span>
+        <div class="filter-settings-item"><p>TRENDING NOW</p></div>
+
+        <div class="filter-settings-item dropdown-mini">
+          <p class="dropdown-mini-name">SIZE</p>
+
+          <ul class="filter-menu-mini">
+            <li>
+              <input type="checkbox" id="XS" name="XS" />
+              <label for="XS">XS</label>
+            </li>
+            <li>
+              <input type="checkbox" id="S" name="S" /> <label for="S">S</label>
+            </li>
+            <li>
+              <input type="checkbox" id="M" name="M" /> <label for="M">M</label>
+            </li>
+            <li>
+              <input type="checkbox" id="L" name="L" /> <label for="L">L</label>
+            </li>
+          </ul>
+        </div>
+
+        <div class="filter-settings-item"><p>PRICE</p></div>
       </div>
     </div>
 
@@ -415,7 +466,7 @@
         </div>
       </div>
     </section>
-    <section class="subscribe">
+    <div class="subscribe">
       <div
         class="container-xl text-center align-items-center align-items-lg-end d-flex flex-column flex-lg-row justify-content-lg-between"
       >
@@ -426,11 +477,11 @@
             <i>a pulvinar purus condimentum“</i>
           </figcaption>
         </figure>
-        <form action="" method="post">
-          <label for="email-input">
+        <form method="post">
+          <div class="form-label">
             SUBSCRIBE
             <p>FOR OUR NEWLETTER AND PROMOTION</p>
-          </label>
+          </div>
           <div class="input-group">
             <input
               id="email-input"
@@ -446,7 +497,7 @@
           </div>
         </form>
       </div>
-    </section>
+    </div>
     <footer class="bg-black">
       <div
         class="footer container-xl d-flex flex-column-reverse flex-md-row justify-content-md-between align-items-center"

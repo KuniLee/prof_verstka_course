@@ -9,7 +9,7 @@
     <title>Shop</title>
   </head>
   <body>
-    <nav class="navbar bg-dark">
+    <nav class="navbar bg-black">
       <div
         class="container-xl d-flex align-items-center justify-content-between"
       >
@@ -166,7 +166,7 @@
       </div>
     </header>
 
-    <section class="offer container-xl grid">
+    <div class="offer container-xl grid">
       <div class="offer__card g-col-3 g-col-md-1 position-relative">
         <div
           class="offer-title position-absolute top-50 start-50 translate-middle"
@@ -204,7 +204,7 @@
         </div>
         <img src="images/offer/4.png" alt="offerimg4" />
       </div>
-    </section>
+    </div>
     <section class="fetured container-xl d-flex flex-column align-items-center">
       <h1>Fetured Items</h1>
       <p class="text-center">
@@ -374,7 +374,7 @@
         </div>
       </div>
     </section>
-    <section class="subscribe">
+    <div class="subscribe">
       <div
         class="container-xl text-center align-items-center align-items-lg-end d-flex flex-column flex-lg-row justify-content-lg-between"
       >
@@ -385,11 +385,12 @@
             <i>a pulvinar purus condimentum“</i>
           </figcaption>
         </figure>
-        <form action="" method="post">
-          <label for="email-input">
+        <form method="post">
+          <div class="form-label">
             SUBSCRIBE
             <p>FOR OUR NEWLETTER AND PROMOTION</p>
-          </label>
+          </div>
+
           <div class="input-group">
             <input
               id="email-input"
@@ -405,7 +406,7 @@
           </div>
         </form>
       </div>
-    </section>
+    </div>
     <footer class="bg-black">
       <div
         class="footer container-xl d-flex flex-column-reverse flex-md-row justify-content-md-between align-items-center"

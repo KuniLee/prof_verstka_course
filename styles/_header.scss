@@ -6,8 +6,9 @@
 .first-page {
   background-color: $light-pink;
   .grid {
-    height: 100%;
     --bs-columns: 1;
+    height: 100%;
+
     grid-template-rows: auto;
     justify-items: center;
     img {
