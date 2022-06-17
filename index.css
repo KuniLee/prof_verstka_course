@@ -11945,7 +11945,7 @@ footer .footer {
 }
 .catalog {
   padding-top: 32px;
-  padding-bottom: 40px;
+  padding-bottom: 64px;
 }
 .catalog__card {
   background: #f8f8f8;
@@ -11953,6 +11953,7 @@ footer .footer {
 .catalog__cards {
   --bs-columns: 1;
   gap: 16px;
+  padding-bottom: 40px;
 }
 .catalog__cards .img__wrapper img {
   width: 100%;
@@ -11986,6 +11987,7 @@ footer .footer {
 @media (min-width: 992px) {
   .catalog__cards {
     --bs-columns: 3;
+    padding-bottom: 48px;
     gap: 30px;
   }
 }
@@ -12019,7 +12021,7 @@ footer .footer {
 }
 @media (min-width: 992px) {
   .catalog {
-    padding-bottom: 48px;
+    padding-bottom: 96px;
   }
 }
 
@@ -12253,4 +12255,27 @@ footer .footer {
   font-size: 14px;
   line-height: 16px;
   color: #6f6e6e;
+}
+
+.pagination {
+  border-radius: 5px;
+  padding: 16px;
+  border: 1px solid #ebebeb;
+  gap: 16px;
+}
+.pagination img {
+  vertical-align: baseline;
+}
+.pagination a {
+  color: #c4c4c4;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+}
+.pagination a.active {
+  color: #f16d7f;
+}
+.pagination a:last-child > img {
+  transform: rotate(180deg);
 }/*# sourceMappingURL=index.css.map */

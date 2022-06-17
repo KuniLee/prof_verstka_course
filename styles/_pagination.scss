@@ -1,0 +1,22 @@
+.pagination {
+  border-radius: 5px;
+  padding: 16px;
+  border: 1px solid #ebebeb;
+  gap: 16px;
+  img {
+    vertical-align: baseline;
+  }
+  a {
+    color: #c4c4c4;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    &.active {
+      color: $primary;
+    }
+    &:last-child > img {
+      transform: rotate(180deg);
+    }
+  }
+}
