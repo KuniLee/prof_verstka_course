@@ -2,8 +2,10 @@
   height: 624px;
   padding: 85px 0;
   background-color: #f7f7f7;
+
   .carousel-item {
     height: 100%;
+
     img {
       height: 100%;
       width: 100%;
@@ -12,16 +14,19 @@
       object-fit: contain;
     }
   }
+
   .carousel-control-prev,
   .carousel-control-next {
     opacity: 1;
     color: transparent;
+
     &:hover {
       .carousel-control-prev-icon-arrow,
       .carousel-control-next-icon-arrow {
         background-image: url('images/product/arrowRed.svg');
       }
     }
+
     &-icon {
       width: 47px;
       height: 47px;
@@ -37,10 +42,12 @@
       }
     }
   }
+
   .carousel-control {
     &-prev {
       justify-content: start;
     }
+
     &-next {
       justify-content: end;
     }
@@ -49,11 +56,41 @@
   .carousel-control-next-icon-arrow {
     transform: rotate(180deg);
   }
+
   @include media-breakpoint-up(sm) {
     padding: 30px 0;
   }
   @include media-breakpoint-up(lg) {
     height: 712px;
     padding: 0;
+  }
+}
+
+.productDesc {
+  padding-top: 64px;
+  padding-bottom: 64px;
+
+  &__line {
+    border: 1px solid #EAEAEA;
+    width: 50%;
+    opacity: 1;
+    margin-bottom: 50px;
+  }
+
+  &__button {
+    margin-top: 64px;
+    padding: 14px 56px 14px 73px;
+    --bs-btn-border-radius: 0;
+    --bs-btn-hover-color: white;
+    --bs-btn-focus-box-shadow: 0;
+    font-size: 16px;
+    line-height: 19px;
+    position: relative;
+
+    img {
+      position: absolute;
+      left: 24px;
+      top: 15px;
+    }
   }
 }

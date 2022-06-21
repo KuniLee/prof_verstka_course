@@ -8,7 +8,7 @@ const closeOffcanvas = () => {
 }
 
 links.forEach((link) => {
-  link.addEventListener('click', (ev) => {
+  link.addEventListener('click', () => {
     closeOffcanvas()
     // document.getElementById('myId').scrollIntoView({ behavior: 'smooth' })
   })
@@ -26,13 +26,12 @@ subMenus.forEach((submenu) => {
     submenu.classList.toggle('opened')
   })
 })
-
 const dropdownMini = document.querySelector('.dropdown-mini')
 dropdownMini
-  .querySelector('.dropdown-mini-name')
-  .addEventListener('click', () => {
-    dropdownMini.classList.toggle('opened')
-  })
+    .querySelector('.dropdown-mini-name')
+    .addEventListener('click', () => {
+      dropdownMini.classList.toggle('opened')
+    })
 
 document.addEventListener('click', (e) => {
   const withinBoundaries = e.composedPath().some((el) => {
