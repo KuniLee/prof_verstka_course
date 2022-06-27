@@ -6,7 +6,7 @@
 		<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 		<link href="favicon.ico" rel="shortcut icon" type="image/x-icon"/>
 		<link href="index.css" rel="stylesheet"/>
-		<title>Cart</title>
+		<title>Registration</title>
 </head>
 <body>
 <nav class="navbar bg-black">
@@ -153,52 +153,40 @@
 		<div
 				class="container-xl d-sm-flex justify-content-sm-between align-items-sm-center"
 		>
-				<h1 class="text-primary text-center">SHOPPING CART</h1>
+				<h1 class="text-primary text-center">REGISTRATION</h1>
 		</div>
 </header>
-<main class="theCart container-xl grid">
-		<div class="g-col-12 g-col-lg-7 cartList">
-				<div class="cartList__card">
-						<img class="cartList__img " src="images/catalog/3.png" alt="cartImg">
-						<div class="cartList__disc">
-								<h3>MANGO PEOPLE T&#8209;SHIRT</h3>
-								<p class="cartList__disc-margin">Price: <span class="text-primary">$300</span></p>
-								<p class="cartList__disc-margin">Color: Red</p>
-								<p class="cartList__disc-margin">Size: Xl</p>
-								<div class="cartList__disc-margin"><label for="quantity-1">Quantity: </label><input
-										class="cartList__quant" value="2" type="text" id="quantity-1"></div>
+<main class="registration container-xl">
+		<div class="row gy-5">
+				<form class="col-12 col-sm-6 col-lg-4 registration__form">
+						<label class="registration__form-label" for="name">Your name</label>
+						<input class="input" type="text" id="name" placeholder="First Name">
+						<input class="input" type="text" placeholder="Last Name">
+						<div class="registration__radioList">
+								<label><input type="radio" name="sex">Male</label>
+								<label><input type="radio" name="sex">Female</label>
+								<label><input type="radio" name="sex">Other</label>
 						</div>
-						<button type="button" class="btn-close cartList__btnClose" aria-label="Close"></button>
+						<label class="registration__form-label" for="email">Login details</label>
+						<input class="input" type="email" id="email" placeholder="Email">
+						<input class="input" type="password" placeholder="Password">
+						<p class="input input__warning">Please use 8 or more characters, with at least 1 number and a mixture of
+								uppercase and lowercase
+								letters</p>
+						<button type="button" class="btn btn-primary align-self-baseline registration__btn">JOIN NOW</button>
+				</form>
+				<div class="col-12 col-sm-6 offset-lg-1 col-lg-7 registration__textBox">
+						<h2>LOYALTY HAS ITS PERKS</h2>
+						<p>Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as
+								soon as you join:</p>
+						<ul>
+								<li>15% off welcome offer</li>
+								<li>Free shipping, returns and exchanges on all orders</li>
+								<li>$10 off a purchase on your birthday</li>
+								<li>Early access to products</li>
+								<li>Exclusive offers & rewards</li>
+						</ul>
 				</div>
-				<div class="cartList__card">
-						<img class="cartList__img " src="images/catalog/2.png" alt="cartImg">
-						<div class="cartList__disc">
-								<h3>MANGO PEOPLE T&#8209;SHIRT</h3>
-								<p class="cartList__disc-margin">Price: <span class="text-primary">$300</span></p>
-								<p class="cartList__disc-margin">Color: Red</p>
-								<p class="cartList__disc-margin">Size: Xl</p>
-								<div class="cartList__disc-margin"><label for="quantity-2">Quantity: </label><input
-										class="cartList__quant" value="2" type="text" id="quantity-2"></div>
-						</div>
-						<button type="button" class="btn-close cartList__btnClose" aria-label="Close"></button>
-				</div>
-				<div class="cartList__btns">
-						<button type="button" class="btn btn-outline-secondary cartList__btn">Clear shopping cart</button>
-						<button type="button" class="btn btn-outline-secondary cartList__btn">Continue shopping</button>
-				</div>
-		</div>
-		<form class="g-col-12 g-col-sm-6 addressForm">
-				<h3 class="text-black addressForm__heading">SHIPPING ADRESS</h3>
-				<input class="input" type="text" placeholder="Country">
-				<input class="input" type="text" placeholder="State">
-				<input class="input" type="text" placeholder="Postcode/Zip">
-				<button type="button" class="btn btn-outline-secondary align-self-start addressForm__btn">Get a quote</button>
-		</form>
-		<div class="g-col-12 g-col-sm-6 checkout">
-				<p class="checkout__subTotal">SUB TOTAL<span>$900</span></p>
-				<p class="checkout__grandTotal">GRAND TOTAL<span class="text-primary">$900</span></p>
-				<hr class="checkout__line">
-				<button type="button" class="btn btn-primary checkout__btn">PROCEED TO CHECKOUT</button>
 		</div>
 </main>
 <div class="subscribe">
