@@ -1,0 +1,29 @@
+.services {
+  --bs-columns: 1;
+  grid-template-columns: repeat(var(--bs-columns, 12), minmax(100px, 360px));
+  gap: 47px;
+  padding-top: 48px;
+  padding-bottom: 64px;
+  .service-heading {
+    color: #fbfbfb;
+    font-size: 19.96px;
+    line-height: 24px;
+    margin-bottom: 0;
+  }
+  .service-text {
+    color: #fbfbfb;
+    font-weight: 300;
+    font-size: 13.972px;
+    line-height: 17px;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .services {
+    --bs-columns: 3;
+    padding-top: 104px;
+    padding-bottom: 104px;
+
+    gap: 30px;
+  }
+}

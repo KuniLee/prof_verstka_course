@@ -1,0 +1,36 @@
+.offer {
+  --bs-columns: 3;
+  grid-template-rows: repeat(3, 2fr) 1fr;
+  gap: 32px;
+  padding-top: 64px;
+  .offer__card {
+    .offer-title {
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+      color: white;
+      p {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 29px;
+      }
+    }
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .offer {
+    grid-template-rows: auto;
+    gap: 20px;
+  }
+}
+@include media-breakpoint-up(lg) {
+  .offer {
+    gap: 30px;
+  }
+}

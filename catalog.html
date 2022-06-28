@@ -2,11 +2,11 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8"/>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
-	<link rel="stylesheet" href="index.css"/>
-	<title>Shop</title>
+	<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+	<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+	<link href="index.css" rel="stylesheet"/>
+	<title>Catalog</title>
 </head>
 <body>
 <nav class="navbar bg-black">
@@ -16,64 +16,53 @@
 		<div class="d-flex align-items-center">
 			<a class="navbar-brand" href="#">
 				<img
-						src="images/navbar/logo.png"
 						alt="logo"
-						class="d-inline-block"
+						class="d-inline-block" src="images/navbar/logo.png"
 				/>
 			</a>
 			<a href="#">
 				<img
-						src="images/navbar/search.svg"
-						alt="search"
-						class="d-inline-block align-text-top"
-				/>
+						alt="search" class="d-inline-block align-text-top"
+						src="images/navbar/search.svg"/>
 			</a>
 		</div>
 		<div class="d-flex align-items-center gap-4">
-			<button
+			<button aria-controls="offcanvasNavbar"
 					class="navbar-toggler"
-					type="button"
-					data-bs-toggle="offcanvas"
 					data-bs-target="#offcanvasNavbar"
-					aria-controls="offcanvasNavbar"
-			>
+					data-bs-toggle="offcanvas"
+					type="button">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<a class="d-none d-md-block" href="#">
-				<img
-						src="images/navbar/profile.svg"
-						alt="profile"
+				<img alt="profile"
 						class="d-inline-block align-text-top"
-				/>
+						src="images/navbar/profile.svg"/>
 			</a>
 			<a class="d-none d-md-block" href="#">
 				<div class="cart position-relative">
-					<div
-							class="cart-counter position-absolute top-0 start-100 translate-middle bg-primary"
-					>
-						5
-					</div>
+					<div class="cart-counter position-absolute top-0 start-100 translate-middle bg-primary">5</div>
 					<img
-							src="images/navbar/cart.svg"
 							alt="cart"
 							class="d-inline-block align-text-top"
+							src="images/navbar/cart.svg"
 					/>
 				</div>
 			</a>
 		</div>
 
 		<div
-				class="offcanvas offcanvas-end"
-				tabindex="-1"
-				id="offcanvasNavbar"
 				aria-labelledby="offcanvasNavbarLabel"
+				class="offcanvas offcanvas-end"
+				id="offcanvasNavbar"
+				tabindex="-1"
 		>
 			<div class="offcanvas-header align-items-end flex-column">
 				<button
-						type="button"
+						aria-label="Close"
 						class="btn-close text-reset"
 						data-bs-dismiss="offcanvas"
-						aria-label="Close"
+						type="button"
 				></button>
 				<p
 						class="offcanvas-title align-self-start"
@@ -85,13 +74,13 @@
 			<div class="offcanvas-body">
 				<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
 					<li class="nav-item">
-						<a class="nav-link" aria-current="page" href="#">MAN</a>
+						<a aria-current="page" class="nav-link" href="#">MAN</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" aria-current="page" href="#">Accessories</a>
+						<a aria-current="page" class="nav-link" href="#">Accessories</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" aria-current="page" href="#">Bags</a>
+						<a aria-current="page" class="nav-link" href="#">Bags</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#">Denim</a>
@@ -102,15 +91,15 @@
 				</ul>
 				<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
 					<li class="nav-item">
-						<a class="nav-link" aria-current="page" href="#">WOMAN</a>
+						<a aria-current="page" class="nav-link" href="#">WOMAN</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" aria-current="page" href="#"
+						<a aria-current="page" class="nav-link" href="#"
 						>Accessories</a
 						>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" aria-current="page" href="#"
+						<a aria-current="page" class="nav-link" href="#"
 						>Jackets & Coats</a
 						>
 					</li>
@@ -126,13 +115,13 @@
 				</ul>
 				<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
 					<li class="nav-item">
-						<a class="nav-link" aria-current="page" href="#">KIDS</a>
+						<a aria-current="page" class="nav-link" href="#">KIDS</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" aria-current="page" href="#">Accessories</a>
+						<a aria-current="page" class="nav-link" href="#">Accessories</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" aria-current="page" href="#"
+						<a aria-current="page" class="nav-link" href="#"
 						>Jackets & Coats</a
 						>
 					</li>
@@ -151,79 +140,110 @@
 	</div>
 </nav>
 
-<header class="first-page">
-	<div class="container-xl h-100">
-		<div class="grid align-items-center">
-			<img class="d-none d-md-block" src="images/head/man.png" alt=""/>
-			<div class="naming d-flex justify-content-center">
-				<div class="line bg-primary"></div>
-				<div class="header">
-					THE BRAND
-					<p>OF LUXERIOUS <span class="text-primary">FASHION</span></p>
-				</div>
-			</div>
-		</div>
+<header class="headName">
+	<div
+			class="container-xl d-sm-flex justify-content-sm-between align-items-sm-center"
+	>
+		<h1 class="text-primary text-center">NEW ARRIVALS</h1>
+		<nav aria-label="breadcrumb">
+			<ol class="breadcrumb justify-content-center">
+				<li class="breadcrumb-item"><a href="#">Home</a></li>
+				<li class="breadcrumb-item"><a href="#">Men</a></li>
+				<li aria-current="page" class="breadcrumb-item active">
+					NEW ARRIVALS
+				</li>
+			</ol>
+		</nav>
 	</div>
 </header>
 
-<div class="offer container-xl grid">
-	<div class="offer__card g-col-3 g-col-md-1 position-relative">
+<div class="filter container-xl grid">
+	<div class="filter_dropdown g-col-1">
 		<div
-				class="offer-title position-absolute top-50 start-50 translate-middle"
+				class="filter_button position-absolute d-flex align-items-sm-center"
 		>
-			30% OFF
-			<p class="text-primary">FOR WOMEN</p>
+			<span class="d-none d-sm-inline">FILTER</span>
+			<span class="filter_image"></span>
 		</div>
-		<img src="images/offer/1.png" alt="offerimg1"/>
+		<ul class="filter-menu">
+			<li class="filter-menu-submenu opened">
+				<label>CATEGORY</label>
+				<ul>
+					<li class="menu-item">Accessories</li>
+					<li class="menu-item">Bags</li>
+					<li class="menu-item">Denim</li>
+					<li class="menu-item">Hoodies & Sweatshirts</li>
+					<li class="menu-item">Jackets & Coats</li>
+					<li class="menu-item">Polos</li>
+					<li class="menu-item">Shirts</li>
+					<li class="menu-item">Shoes</li>
+					<li class="menu-item">Sweaters & Knits</li>
+					<li class="menu-item">T-Shirts</li>
+					<li class="menu-item">Tanks</li>
+				</ul>
+			</li>
+			<li class="filter-menu-submenu">
+				<label>BRAND</label>
+				<ul>
+					<li class="menu-item">Nike</li>
+					<li class="menu-item">Adidas</li>
+					<li class="menu-item">Rebook</li>
+					<li class="menu-item">Hoodies & Sweatshirts</li>
+				</ul>
+			</li>
+			<li class="filter-menu-submenu">
+				<label>DESIGNER</label>
+				<ul>
+					<li class="menu-item">Nicolai</li>
+					<li class="menu-item">Bruce</li>
+					<li class="menu-item">Ganse</li>
+					<li class="menu-item">D&G</li>
+				</ul>
+			</li>
+		</ul>
 	</div>
+	<div class="filter-settings mt-1 mt-sm-0 g-col-1">
+		<div class="filter-settings-item"><p>TRENDING NOW</p></div>
 
-	<div class="offer__card g-col-3 g-col-md-1 position-relative">
-		<div
-				class="offer-title position-absolute top-50 start-50 translate-middle"
-		>
-			HOT DEAL
-			<p class="text-primary">FOR MEN</p>
+		<div class="filter-settings-item dropdown-mini">
+			<p class="dropdown-mini-name">SIZE</p>
+
+			<ul class="filter-menu-mini">
+				<li>
+					<input id="XS" name="XS" type="checkbox"/>
+					<label for="XS">XS</label>
+				</li>
+				<li>
+					<input id="S" name="S" type="checkbox"/> <label for="S">S</label>
+				</li>
+				<li>
+					<input id="M" name="M" type="checkbox"/> <label for="M">M</label>
+				</li>
+				<li>
+					<input id="L" name="L" type="checkbox"/> <label for="L">L</label>
+				</li>
+			</ul>
 		</div>
-		<img src="images/offer/2.png" alt="offerimg2"/>
-	</div>
-	<div class="offer__card g-col-3 g-col-md-1 position-relative">
-		<div
-				class="offer-title position-absolute top-50 start-50 translate-middle"
-		>
-			NEW ARRIVALS
-			<p class="text-primary">FOR KIDS</p>
-		</div>
-		<img src="images/offer/3.png" alt="offerimg3"/>
-	</div>
-	<div class="offer__card g-col-3 position-relative">
-		<div
-				class="offer-title position-absolute top-50 start-50 translate-middle"
-		>
-			LUXIROUS & TRENDY
-			<p class="text-primary">ACCESORIES</p>
-		</div>
-		<img src="images/offer/4.png" alt="offerimg4"/>
+
+		<div class="filter-settings-item"><p>PRICE</p></div>
 	</div>
 </div>
-<section class="fetured container-xl d-flex flex-column align-items-center">
-	<h1>Fetured Items</h1>
-	<p class="text-center">
-		Shop for items based on what we featured in this week
-	</p>
-	<div class="fetured__cards grid">
-		<figure class="fetured__card">
+
+<section class="catalog container-xl d-flex flex-column align-items-center">
+	<div class="catalog__cards grid">
+		<figure class="catalog__card">
 			<div class="img__wrapper w-100 position-relative">
 				<div class="hover_bg position-absolute w-100 h-100">
 					<img
+							alt="add_to_cart"
 							class="position-absolute top-50 start-50 translate-middle"
 							src="images/add_to_cart.svg"
-							alt="add_to_cart"
 					/>
 				</div>
-				<img src="images/fetured/1.png" alt="futured-image-1"/>
+				<img alt="catalog-image-1" src="images/catalog/1.png"/>
 			</div>
 
-			<div class="fetured__card-desc">
+			<div class="catalog__card-desc">
 				<h3>ELLERY X M'O CAPSULE</h3>
 				<p class="desc-text">
 					Known for her sculptural takes on traditional tailoring,
@@ -233,19 +253,19 @@
 				<p class="desc-price text-primary">$52.00</p>
 			</div>
 		</figure>
-		<figure class="fetured__card">
+		<figure class="catalog__card">
 			<div class="img__wrapper w-100 position-relative">
 				<div class="hover_bg position-absolute w-100 h-100">
 					<img
+							alt="add_to_cart"
 							class="position-absolute top-50 start-50 translate-middle"
 							src="images/add_to_cart.svg"
-							alt="add_to_cart"
 					/>
 				</div>
-				<img src="images/fetured/2.png" alt="futured-image-2"/>
+				<img alt="futured-image-2" src="images/catalog/2.png"/>
 			</div>
 
-			<div class="fetured__card-desc">
+			<div class="catalog__card-desc">
 				<h3>ELLERY X M'O CAPSULE</h3>
 				<p class="desc-text">
 					Known for her sculptural takes on traditional tailoring,
@@ -254,19 +274,19 @@
 				<p class="desc-price text-primary">$52.00</p>
 			</div>
 		</figure>
-		<figure class="fetured__card">
+		<figure class="catalog__card">
 			<div class="img__wrapper w-100 position-relative">
 				<div class="hover_bg position-absolute w-100 h-100">
 					<img
+							alt="add_to_cart"
 							class="position-absolute top-50 start-50 translate-middle"
 							src="images/add_to_cart.svg"
-							alt="add_to_cart"
 					/>
 				</div>
-				<img src="images/fetured/3.png" alt="futured-image-3"/>
+				<img alt="catalog-image-3" src="images/catalog/3.png"/>
 			</div>
 
-			<div class="fetured__card-desc">
+			<div class="catalog__card-desc">
 				<h3>ELLERY X M'O CAPSULE</h3>
 				<p class="desc-text">
 					Known for her sculptural takes on traditional tailoring,
@@ -275,19 +295,19 @@
 				<p class="desc-price text-primary">$52.00</p>
 			</div>
 		</figure>
-		<figure class="fetured__card">
+		<figure class="catalog__card">
 			<div class="img__wrapper w-100 position-relative">
 				<div class="hover_bg position-absolute w-100 h-100">
 					<img
+							alt="add_to_cart"
 							class="position-absolute top-50 start-50 translate-middle"
 							src="images/add_to_cart.svg"
-							alt="add_to_cart"
 					/>
 				</div>
-				<img src="images/fetured/4.png" alt="futured-image-4"/>
+				<img alt="catalog-image-4" src="images/catalog/4.png"/>
 			</div>
 
-			<div class="fetured__card-desc">
+			<div class="catalog__card-desc">
 				<h3>ELLERY X M'O CAPSULE</h3>
 				<p class="desc-text">
 					Known for her sculptural takes on traditional tailoring,
@@ -296,19 +316,19 @@
 				<p class="desc-price text-primary">$52.00</p>
 			</div>
 		</figure>
-		<figure class="fetured__card">
+		<figure class="catalog__card">
 			<div class="img__wrapper w-100 position-relative">
 				<div class="hover_bg position-absolute w-100 h-100">
 					<img
+							alt="add_to_cart"
 							class="position-absolute top-50 start-50 translate-middle"
 							src="images/add_to_cart.svg"
-							alt="add_to_cart"
 					/>
 				</div>
-				<img src="images/fetured/5.png" alt="futured-image-5"/>
+				<img alt="catalog-image-5" src="images/catalog/5.png"/>
 			</div>
 
-			<div class="fetured__card-desc">
+			<div class="catalog__card-desc">
 				<h3>ELLERY X M'O CAPSULE</h3>
 				<p class="desc-text">
 					Known for her sculptural takes on traditional tailoring,
@@ -317,19 +337,82 @@
 				<p class="desc-price text-primary">$52.00</p>
 			</div>
 		</figure>
-		<figure class="fetured__card">
+		<figure class="catalog__card">
 			<div class="img__wrapper w-100 position-relative">
 				<div class="hover_bg position-absolute w-100 h-100">
 					<img
+							alt="add_to_cart"
 							class="position-absolute top-50 start-50 translate-middle"
 							src="images/add_to_cart.svg"
-							alt="add_to_cart"
 					/>
 				</div>
-				<img src="images/fetured/6.png" alt="futured-image-6"/>
+				<img alt="catalog-image-6" src="images/catalog/6.png"/>
 			</div>
 
-			<div class="fetured__card-desc">
+			<div class="catalog__card-desc">
+				<h3>ELLERY X M'O CAPSULE</h3>
+				<p class="desc-text">
+					Known for her sculptural takes on traditional tailoring,
+					Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
+				</p>
+				<p class="desc-price text-primary">$52.00</p>
+			</div>
+		</figure>
+		<figure class="catalog__card">
+			<div class="img__wrapper w-100 position-relative">
+				<div class="hover_bg position-absolute w-100 h-100">
+					<img
+							alt="add_to_cart"
+							class="position-absolute top-50 start-50 translate-middle"
+							src="images/add_to_cart.svg"
+					/>
+				</div>
+				<img alt="catalog-image-7" src="images/catalog/7.png"/>
+			</div>
+
+			<div class="catalog__card-desc">
+				<h3>ELLERY X M'O CAPSULE</h3>
+				<p class="desc-text">
+					Known for her sculptural takes on traditional tailoring,
+					Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
+				</p>
+				<p class="desc-price text-primary">$52.00</p>
+			</div>
+		</figure>
+		<figure class="catalog__card">
+			<div class="img__wrapper w-100 position-relative">
+				<div class="hover_bg position-absolute w-100 h-100">
+					<img
+							alt="add_to_cart"
+							class="position-absolute top-50 start-50 translate-middle"
+							src="images/add_to_cart.svg"
+					/>
+				</div>
+				<img alt="catalog-image-8" src="images/catalog/8.png"/>
+			</div>
+
+			<div class="catalog__card-desc">
+				<h3>ELLERY X M'O CAPSULE</h3>
+				<p class="desc-text">
+					Known for her sculptural takes on traditional tailoring,
+					Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
+				</p>
+				<p class="desc-price text-primary">$52.00</p>
+			</div>
+		</figure>
+		<figure class="catalog__card">
+			<div class="img__wrapper w-100 position-relative">
+				<div class="hover_bg position-absolute w-100 h-100">
+					<img
+							alt="add_to_cart"
+							class="position-absolute top-50 start-50 translate-middle"
+							src="images/add_to_cart.svg"
+					/>
+				</div>
+				<img alt="catalog-image-9" src="images/catalog/9.png"/>
+			</div>
+
+			<div class="catalog__card-desc">
 				<h3>ELLERY X M'O CAPSULE</h3>
 				<p class="desc-text">
 					Known for her sculptural takes on traditional tailoring,
@@ -339,16 +422,28 @@
 			</div>
 		</figure>
 	</div>
-	<button type="button" class="btn text-center btn-outline-primary">
-		Browse All Product
-	</button>
+	<div class="pagination">
+		<a href="#">
+			<img alt="" src="images/chevron.svg"/>
+		</a>
+		<a class="active" href="#">1</a>
+		<a href="#">2</a>
+		<a href="#">3</a>
+		<a href="#">4</a>
+		<a href="#">5</a>
+		<a href="#">6.....20</a>
+		<a href="#">
+			<img alt="" src="images/chevron.svg"/>
+		</a>
+	</div>
 </section>
+
 <section class="bg-black">
 	<div
 			class="services container-xl grid text-center justify-content-center justify-content-lg-between"
 	>
 		<div class="d-flex flex-column gap-2 gap-lg-3 align-items-center">
-			<img src="images/services/1.svg" alt="service_1"/>
+			<img alt="service_1" src="images/services/1.svg"/>
 			<h3 class="service-heading">Free Delivery</h3>
 			<p class="service-text">
 				Worldwide delivery on all. Authorit tively morph next-generation
@@ -357,7 +452,7 @@
 		</div>
 
 		<div class="d-flex flex-column gap-2 gap-lg-3 align-items-center">
-			<img src="images/services/2.svg" alt="service_1"/>
+			<img alt="service_1" src="images/services/2.svg"/>
 			<h3 class="service-heading">Sales & discounts</h3>
 			<p class="service-text">
 				Worldwide delivery on all. Authorit tively morph next-generation
@@ -365,7 +460,7 @@
 			</p>
 		</div>
 		<div class="d-flex flex-column gap-2 gap-lg-3 align-items-center">
-			<img src="images/services/3.svg" alt="service_2"/>
+			<img alt="service_2" src="images/services/3.svg"/>
 			<h3 class="service-heading">Quality assurance</h3>
 			<p class="service-text">
 				Worldwide delivery on all. Authorit tively morph next-generation
@@ -374,12 +469,13 @@
 		</div>
 	</div>
 </section>
+
 <div class="subscribe">
 	<div
 			class="container-xl text-center align-items-center align-items-lg-end d-flex flex-column flex-lg-row justify-content-lg-between"
 	>
 		<figure>
-			<img src="images/subscibe/face.png" alt="face"/>
+			<img alt="face" src="images/subscibe/face.png"/>
 			<figcaption class="face-text text-black">
 				“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
 				<i>a pulvinar purus condimentum“</i>
@@ -390,17 +486,16 @@
 				SUBSCRIBE
 				<p>FOR OUR NEWLETTER AND PROMOTION</p>
 			</div>
-
 			<div class="input-group">
 				<input
-						id="email-input"
-						type="email"
-						class="form-control"
-						placeholder="Enter Your Email"
-						aria-label="email"
 						aria-describedby="button-addon2"
+						aria-label="email"
+						class="form-control"
+						id="email-input"
+						placeholder="Enter Your Email"
+						type="email"
 				/>
-				<button class="button btn btn-primary" type="button" id="button-addon2">
+				<button class="btn btn-primary" id="button-addon2" type="button">
 					Subscribe
 				</button>
 			</div>
@@ -414,17 +509,17 @@
 		<p class="text-white">© 2021 Brand All Rights Reserved.</p>
 
 		<div class="d-flex gap-2">
-			<a class="" href="#" target="_blank" rel="noopener"
-			><img src="images/footer/Facebook.svg" alt="instagram"
+			<a class="" href="#" rel="noopener" target="_blank"
+			><img alt="instagram" src="images/footer/Facebook.svg"
 			/></a>
-			<a class="" href="#" target="_blank" rel="noopener"
-			><img src="images/footer/Instagram.svg" alt="Telegram"
+			<a class="" href="#" rel="noopener" target="_blank"
+			><img alt="Telegram" src="images/footer/Instagram.svg"
 			/></a>
-			<a class="" href="#" target="_blank" rel="noopener"
-			><img src="images/footer/Printerest.svg" alt="WhatsApp"
+			<a class="" href="#" rel="noopener" target="_blank"
+			><img alt="WhatsApp" src="images/footer/Printerest.svg"
 			/></a>
-			<a class="" href="#" target="_blank" rel="noopener"
-			><img src="images/footer/Twitter.svg" alt="WhatsApp"
+			<a class="" href="#" rel="noopener" target="_blank"
+			><img alt="WhatsApp" src="images/footer/Twitter.svg"
 			/></a>
 		</div>
 	</div>

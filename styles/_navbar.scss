@@ -1,20 +1,64 @@
-.navbar-dark .navbar-toggler-icon {
+.navbar-toggler-icon {
   background-image: url(images/navbar/burger.svg);
 }
 .navbar-toggler {
   padding: 0;
   border: 0;
 }
+
 .navbar-toggler:focus {
   box-shadow: none;
 }
 .navbar {
   height: 74px;
+  .offcanvas-header {
+    padding: 16px 16px 24px 34px;
+
+    .offcanvas-title {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+      color: #000000;
+    }
+  }
+  .offcanvas-body {
+    padding-top: 0;
+    padding-left: 34px;
+    .nav-link {
+      font-size: 14px;
+      line-height: 17px;
+      color: #6f6e6e;
+      margin-left: 22px;
+      padding: 5px 0;
+    }
+    .navbar-nav {
+      margin-bottom: 15px;
+      :first-child > .nav-link {
+        color: $primary;
+        margin-left: 0;
+        padding-top: 0;
+      }
+    }
+  }
+}
+.cart {
+  margin-right: 10px;
+}
+.cart-counter {
+  font-size: 12px;
+  text-align: center;
+  line-height: 19px;
+  color: white;
+  height: 19px;
+  width: 19px;
+  background-color: $pink;
+  border-radius: 50%;
 }
 .navbar-brand {
   padding: 0;
   margin-right: 41px;
 }
+
 @include media-breakpoint-up(md) {
   .offcanvas-end {
     width: 20%;

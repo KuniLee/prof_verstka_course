@@ -1,0 +1,108 @@
+.registration {
+
+  padding-top: 40px;
+  padding-bottom: 96px;
+  @include media-breakpoint-up(lg) {
+    padding-top: 64px;
+  }
+  &__textBox {
+
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+    @include media-breakpoint-up(lg) {
+      font-size: 24px;
+      line-height: 29px;
+    }
+
+    h2 {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 19px;
+      color: #000000;
+      margin-bottom: 32px;
+      @include media-breakpoint-up(lg) {
+        margin-bottom: 22px;
+        font-size: 24px;
+        line-height: 29px;
+      }
+    }
+
+    ul {
+      margin-bottom: 0;
+      margin-top: 22px;
+      list-style-image: url('images/CheakMark.svg');
+
+      li {
+        padding-left: 10px;
+
+        &:not(:last-child) {
+          margin-bottom: 16px;
+        }
+
+      }
+    }
+  }
+
+  &__btn {
+    margin-top: 19px;
+
+    &:after {
+      margin-left: 20px;
+      content: url("images/Arrow.svg");
+    }
+
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    padding: 15px 20px;
+    border-radius: 0;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    &-label {
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 19px;
+      color: #222222;
+    }
+  }
+
+  &__radioList {
+    margin: 10px 0;
+
+    label {
+      &:not(:first-child) {
+        margin-left: 20px;
+      }
+
+      font-weight: 300;
+      font-size: 11px;
+      line-height: 13px;
+
+      input {
+        vertical-align: sub;
+        height: 17px;
+        width: 17px;
+        margin-right: 10px;
+        color: #000000;
+
+        &:not(:first-child) {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+}
+
+.input__warning {
+  border: none;
+  padding: 0;
+  margin-top: -5px;
+}

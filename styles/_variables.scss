@@ -2,33 +2,25 @@
 
 $navbar-height: 42px;
 $black: #222222;
-$pink: #ff6a6a;
-
-$primary: #014524;
+$primary: #f16d7f;
 $mint: #cad7d0;
 $green: #014524;
 $light-pink: #f1e4e6;
-$grey: #6b6b6b;
+$grey: #9f9f9f;
+$gray-dark: #5d5d5d;
+$btn-close-width: 12px;
 
-:root {
-  --bs-body-color: #222222;
-}
-
+$enable-grid-classes: true;
+$enable-cssgrid: true;
+$paragraph-margin-bottom: 0;
 $navbar-dark-toggler-icon-bg: url(@/images/navbar/burger.svg);
 $navbar-dark-toggler-border-color: rgba($black, 0.1);
 
-$offcanvas-horizontal-width: 100%;
-//$btn-close-opacity: 1;
-//$btn-close-width: 1.5em;
-//$grid-gutter-width: 20px;
+$offcanvas-horizontal-width: 232px;
 $font-family-base: 'Lato', sans-serif;
 
 $headings-font-weight: 400;
 $headings-line-height: 1.4;
-$headings-color: null;
-
 $accordion-border-radius: 20px;
 
-// @import 'bootstrap/scss/functions';
-// @import 'bootstrap/scss/variables';
-// @import 'bootstrap/scss/mixins';
+$breadcrumb-active-color: $primary;
